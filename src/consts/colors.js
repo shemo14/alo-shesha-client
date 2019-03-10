@@ -1,0 +1,1 @@
+export default {	red: '#ea5454',	yellow: '#f0ba43',	gray: '#636363',	wight: '#fff',	blue: '#2d4058',	lightgray: '#eeeeee',};

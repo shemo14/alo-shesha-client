@@ -1,0 +1,1 @@
+const INIT_STATE = { products: null, total: null, charge: null, count: 0 };export default ( state = INIT_STATE, action ) => {	switch (action.type) {		case ('get_cart'):			return ({ ...state, products: action.data.data, total: action.data.total, charge: action.data.charge, count: action.data.data.length  })		default:			return state;	}}

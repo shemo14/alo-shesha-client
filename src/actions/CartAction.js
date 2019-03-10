@@ -1,0 +1,1 @@
+import axios from 'axios';import CONST from '../consts'export const getCart = (user_id) => {	return(dispatch) => {		axios.post(CONST.url + 'showCart', { user_id }).then(response => {			const data = response.data;			dispatch({type: 'get_cart', data})		});	}};export const addToCart = () => {}export const removeFromCart = (cart_id) => {}
